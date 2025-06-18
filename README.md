@@ -15,7 +15,7 @@ A curated list of awesome things related to <a href='https://www.blendviewer.com
 <i>Created by: <a href='https://www.blendviewer.com/' target="_blank">www.blendviewer.com</a></i>
 <br><br>
 
-<img width="600" src="./screenshot.png" alt="logo of awesome-blendviewer repository">
+<img width="1024" src="./screenshot.png" alt="logo of awesome-blendviewer repository">
 
 ## 期刊
 
