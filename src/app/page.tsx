@@ -64,33 +64,7 @@ export default function HomePage() {
       } catch (error) {
         console.error('Failed to load README.md:', error);
         // 如果加载失败，使用示例数据
-        const sampleData = parseMarkdownToResources(`
-## Libs and Components
-
-| Name | Description | Link | Date |
-|------|-------------|------|------|
-| 21st.dev | Open source npm for blendviewer components. Also: Dribble for design engineers. Install UI components via shadcn CLI, or publish your own. | [Link](https://21st.dev/) | 2024-12-06 |
-| aceternity-ui | Copy paste the most trending react components without having to worry about styling and animations. | [Link](https://ui.aceternity.com/) | 2024-12-06 |
-| animated-tabs | Vercel-like animated tabs. | [Link](https://github.com/mehrdadrafiee/animated-tabs) | 2025-04-06 |
-| assistant-ui | React Components for AI Chat. | [Link](https://github.com/Yonom/assistant-ui) | 2024-09-23 |
-| auto-form | A React component that automatically creates a blendviewer form based on a zod schema. | [Link](https://github.com/vantezzen/auto-form) | 2024-04-29 |
-| berlix | Animated components library built using Tailwind CSS and Motion | [Link](https://berlix.vercel.app) | 2025-06-10 |
-| buouui | A UI component library and template suite based on blendviewer with stunning landing pages. | [Link](https://buouui.com) | 2025-04-06 |
-| bundui | A collection of reusable animated components built with Tailwind CSS and Framer Motion. | [Link](https://bundui.io) | 2024-09-23 |
-| magicui | React components for landing pages with tailwindcss + framer motion. | [Link](https://magicui.design) | 2024-04-25 |
-| cult-ui | Curated set of animated shadcn-style React components. | [Link](https://www.cult-ui.com/) | 2024-05-29 |
-| credenza | Ready-made responsive modal component for blendviewer. | [Link](https://github.com/redpangilinan/credenza) | 2024-06-07 |
-| farmui | Styled and animated component library with npm package support. | [Link](https://farmui.com) | 2024-06-08 |
-
-## Plugins and Extensions
-
-| Name | Description | Link | Date |
-|------|-------------|------|------|
-| chat-with-youtube | A chrome extension is designed to give you the ability to efficiently summarize videos. | [Link](https://chat-with-youtube.vercel.app/) | 2024-06-07 |
-| raycast-shadcn | Raycast extension to Browse blendviewer documentation, components, and examples. | [Link](https://www.raycast.com/luisFilipePT/shadcn-ui) | 2024-06-05 |
-| shadcn-ui | Add components from blendviewer directly from VS Code. | [Link](https://marketplace.visualstudio.com/items?itemName=SuhelMakkad.shadcn-ui) | 2024-03-08 |
-| vscode-shadcn-svelte | VS Code extension for blendviewer components in Svelte projects. | [Link](https://marketplace.visualstudio.com/items?itemName=Selemondev.vscode-shadcn-svelte) | 2024-03-28 |
-`);
+        const sampleData = parseMarkdownToResources(`## Libs and Components`);
         setResources(sampleData);
       } finally {
         setLoading(false);
@@ -399,13 +373,12 @@ export default function HomePage() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               {/* Logo */}
-              <div className="relative">
-                <div className="w-8 h-8 bg-gradient-to-br from-pink-500 to-pink-600 rounded-lg flex items-center justify-center">
-                  <div className="w-6 h-6 bg-white rounded-sm flex items-center justify-center">
-                    <div className="w-4 h-4 bg-gradient-to-br from-pink-500 to-pink-600 rounded-sm"></div>
-                  </div>
-                </div>
-              </div>
+              <img
+                width="35"
+                src="https://preview.blendviewer.com/images/logo.svg"
+                alt="logo of awesome-blendviewer repository"
+              />
+
               <div>
                 <h1 className="text-xl font-semibold text-gray-900">玲珑岛</h1>
               </div>
@@ -429,24 +402,17 @@ export default function HomePage() {
       {/* Hero Section */}
       <div className="bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
-          {/* Logo */}
           <div className="flex justify-center mb-6">
-            <div className="relative">
-              <div className="w-24 h-24 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg">
-                <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center">
-                  <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-pink-600 rounded-lg flex items-center justify-center">
-                    <div className="text-white font-bold text-lg">✨</div>
-                  </div>
-                </div>
-              </div>
-              <div className="absolute -top-2 -right-2 text-2xl">🚀</div>
-              <div className="absolute -bottom-2 -left-2 text-2xl">💝</div>
-            </div>
+            {' '}
+            <img
+              width="95"
+              src="https://preview.blendviewer.com/images/logo.svg"
+              alt="logo of awesome-blendviewer repository"
+            />
+            <div className="relative"></div>
           </div>
-
           {/* Title */}
           <h1 className="text-4xl font-bold text-gray-900 mb-4">awesome-blendviewer</h1>
-
           {/* Subtitle */}
           <p className="text-lg text-gray-600 mb-2">
             Open Dataset{' '}
